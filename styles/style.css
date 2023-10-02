@@ -21,7 +21,8 @@ body{
 .card{
     background-color: var(--blanco);
     border-radius: 10px;
-    overflow: visible; /*el contenido que se desborda hazlo visible, hide o scroll*/
+    overflow: hidden; /*el contenido que se desborda hazlo visible o scroll*/
+    max-width:500px;
 }
 
 .card__content{
@@ -33,8 +34,9 @@ body{
 
 .card__category{
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     font-size: 12px;
+    font-weight: 500;
 }
 
 .card__category, .card__description, .card__price-old{
@@ -49,12 +51,12 @@ body{
 
 .card__title{
     font-size: 32px;
-    margin: 10px 0 10px 0;
+    margin: 0;
     line-height: 90%;
 }
 
 .card__description{
-    line-height: 150%;
+    line-height: 190%;
 }
 
 .card__price{
@@ -65,7 +67,7 @@ body{
 
 .card__price-current{
     color:var(--primary);
-    font-size: 32px;
+    font-size: 2.8rem;
 }
 
 .card__price-old{
@@ -76,7 +78,13 @@ body{
     background-color: var(--primary);
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
     color:var(--blanco);
     border:none;
     padding:15px;
+    cursor: pointer;
+}
+
+@media screen {
+    
 }
