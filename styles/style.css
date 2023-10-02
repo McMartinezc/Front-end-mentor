@@ -2,8 +2,36 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-cream:hsl(30, 38%, 92%);
+    --primary:hsl(158, 36%, 37%);
+    --blanco:hsl(0, 0%, 100%);
+}
+
+html{
+    font-size: 14px;
+}
+
 body{
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Fraunces', serif;
-    font-size: 14px;
+    background-color:var(--primary-cream);
+}
+.card{
+    background-color: var(--blanco);
+    border-radius: 10px;
+}
+
+.card__image{
+    width: 100%;
+}
+
+.card__price-current{
+    color:var(--primary);
+}
+
+.card__addtocart-button{
+    background-color: var(--primary);
+    border-radius: 5px;
+    color:var(--blanco);
 }
