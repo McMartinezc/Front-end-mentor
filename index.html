@@ -16,7 +16,11 @@
 
 <body>
   <article class="card">
-    <img class="card__image" src="images/image-product-mobile.jpg" alt="Perfume">
+    <picture>
+      <source class="card__image" media="(min-width: 600px)" srcset="images/image-product-desktop.jpg">
+      <img class="card__image" src="images/image-product-mobile.jpg" alt="Perfume">
+    </picture>
+    
 
     <div class="card__content">
       <h2 class="card__category">Perfume</h2>
