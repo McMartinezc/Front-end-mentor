@@ -6,6 +6,7 @@
     --primary-cream:hsl(30, 38%, 92%);
     --primary:hsl(158, 36%, 37%);
     --blanco:hsl(0, 0%, 100%);
+    --gris:hsl(228, 12%, 48%);
 }
 
 html{
@@ -13,25 +14,69 @@ html{
 }
 
 body{
-    /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Fraunces', serif;
     background-color:var(--primary-cream);
 }
+
 .card{
     background-color: var(--blanco);
     border-radius: 10px;
+    overflow: visible; /*el contenido que se desborda hazlo visible, hide o scroll*/
+}
+
+.card__content{
+    display:flex;
+    flex-direction: column;
+    padding:0 18px 18px 18px;
+    gap:10px;
+}
+
+.card__category{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.card__category, .card__description, .card__price-old{
+    color: var(--gris);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .card__image{
+    /* border-radius: 10px 10px 0 0; */
     width: 100%;
+}
+
+.card__title{
+    font-size: 32px;
+    margin: 10px 0 10px 0;
+    line-height: 90%;
+}
+
+.card__description{
+    line-height: 150%;
+}
+
+.card__price{
+    display:flex;
+    align-items: center;
+    gap:20px;
 }
 
 .card__price-current{
     color:var(--primary);
+    font-size: 32px;
+}
+
+.card__price-old{
+    text-decoration: line-through;
 }
 
 .card__addtocart-button{
     background-color: var(--primary);
     border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
     color:var(--blanco);
+    border:none;
+    padding:15px;
 }
