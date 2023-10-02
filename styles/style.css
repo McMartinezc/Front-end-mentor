@@ -91,7 +91,6 @@ body{
         justify-content: center;
     }
     .card__image {
-        object-fit: cover; /* Asegura que la imagen cubra completamente el contenedor */
         width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
         height: 100%;;
     }
