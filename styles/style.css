@@ -16,6 +16,12 @@ html{
 body{
     font-family: 'Fraunces', serif;
     background-color:var(--primary-cream);
+
+    /*centrar la carta en medio de la pantalla*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .card{
@@ -25,10 +31,11 @@ body{
 }
 
 .card__content{
+    padding: 1.6rem;
     display:flex;
     flex-direction: column;
     padding:0 18px 18px 18px;
-    gap:10px;
+    gap:1rem;
 }
 
 .card__category{
